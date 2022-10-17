@@ -1,0 +1,187 @@
+left monitor  Malsow , ben CCSP book from drive G:\My Drive\Managing Cloud Security - C838\Malisow, Ben - (isc)2 Ccsp Certified Cloud Security Professional Official Study Guide-Sybex (2019).pdf
+and
+G:\My Drive\Managing Cloud Security - C838\Cloud security exam Wiley STUFF TO LOOK UP.docx
+---
+This doc is below
+---
+Cloud security exam
+shit I didn’t know
+
+
+• IAAS vs PAAS maintaining the OS?
+• Dynamic software testing details I guess its also called fuzz testing and should include known bad data, perhaps mostly useful for simulating negative test cases
+This is where you are running the software and allow users to operate it is a great way to simulate known good and bad inputs DYNAMIC = WHILE RUNNING
+
+• WTF is dynamic policy control and how does this correlate with DRM? This allows data owners to modify the permissions for their protected data
+• Interesting that TLS uses X509 certs for symmetric keys
+• Interesting that admin access is prevented in maintenance mode
+• Again with the SDLC need to know what crap goes on at each state
+
+• Openstack has components called Nova, Heat Neutron Ironic and Cinder, its an open source project for creating cloud environments regardless of hardware brand
+• what is hackback and why is it illegal – this is basically hacking the attacker back
+• I guess content created in the cloud could be owned by the cloud provider? Ok so strong contractual language is needed for legal
+• Need to find out more about this odd term fuzz testing
+• Manually patching is not scalable (duh) but did you know this is considered a risk especially in the cloud
+• Interesting that forensics in certain jurisdictions need licenses (wonder what kind) 
+• Probably should read up more on the BIA business impact analysis as an artifact for BC/DR
+• what role is the data controller do? Huh is guess it’s the entity that collects or creates the privacy data 
+• Network address translation is capable of network segmentation … interesting
+• API encryption can be TLS for representational transfer (REST) and message level (crypto encryption for simple Object access SOAP, API crypto can be TLS for REST and msg SOAP… yeah I’m trying here
+• Did you know that encryption is used in all data life cycles in the cloud?
+• Automation of configuration can help reduce potential attack vectors, this is because a secure baseline config applied and maintained automatically ensures the optimum security with the least attack surface
+• FYI OECD and EU DGPR are similar to AICPA – they have privacy in the name
+FedRAMP states that US federal entities are required to use US data centers in the US for Cloud
+• Fuck the ISOs like what is ISO 27034 ??? its something to do with Organizational Normative Framework (ONF) NEED TO MAKE THESE STICK!!
+Each application in an org compliant will be assigned an Application Normative Framework (ANF)
+• CDN content delivery not to be confused with Software defined networking 
+• CDNs are often used in conjunction with SaaS services to deliver stuff like multimedia (CDNs would be the storage type)
+• Data owner assigns labels not the cloud provider
+• Optimal number of entrances to the cloud center campus is 1 
+• Crypto shredding requires at least 2 crypto systems
+• Access management (AAA) order is authn, authz then access (alphabetical)
+• SLA satisfaction surveys from current and pass customers would probably aid in 
+• Cloud providers most likely don’t allow pen testing and port scanning because of this it would hamper a cloud customer to protect their assets in manages services arrangement 
+If they do they may not allow social engineering as a part of the pen test 
+Big boy test time
+• Interestingly… building data centers in urban areas would be most restricted to municipal (govt restrictions) not size of the plot
+• Conversely building in rural settings data centers probably one of the most restrictive would be the availability of emergency services
+• Database activity monitors (DAMs) prevent / reduce success of SQL injections
+• A business advantage of shifting to the cloud is reducing cash flow risks – this is due to spreading costs over time 
+• Civil courts vs criminal courts – civil yeah I dunno need to do more reading these law specific terms 
+Civil (cases) is where one entity sures another (person, company etc. ether direction) because of a dispute between them civil case, the plaintiff must convince the jury by a “preponderance of the evidence” - 
+• TLS uses symmetric keys
+• American Accountants use the SSAE 18  standard
+• Biba is an access control model
+• NIST SP 800-53 is for RMF and is focused on risk management over costs/ perceived threats
+• CSA STAR program levels (lets use a carls JR star)
+o Level 1 self-assessment
+o Level 2 requires third parts assessment 
+o Level 3 continual monitoring by 3rd party
+o Level 4 no such thing
+• From cloud security perspective privileged user access should be temporary
+• In Europe cell numbers are PII but not in the US
+• The privacy shield program comes from the FTC
+• Service Organization Control (SOC) 2 reports are not designed for dissemination outside 
+• Transparent encryption can be used to encrypt specific tables with a database
+• What countries don’t follow European Union GDPR? Brazil apparently but probably more
+• What the heck is a audit scoping statement?
+• Need to look up details on “automating service enablement” and how it might benefit the educational sector
+• PaaS storage most likely would-be using data warehousing and databases not CDNs
+• Apparently 2 feet is the recommended raised floor recommendations
+• Under EU law what’s the difference between directive and regulation – 
+Directive allows member states to create their own laws ; regulation is applied to all member states
+• Realtime analytics predict shoppers needs
+• Organization for Economic Cooperation and Development (OECD)… something something security safeguards principal need to look up this crap
+• What the heck is STRIDE testing? 
+• Qualitative risk assessments (QRA) deals with the probability 
+• When migrating to the cloud from on-prem the cloud provider might restrict logging 
+• Static application security testing (SAST) examines source code in order to determine securty flaws and operational error
+• SOC reports are the audit reporting mechanisms dictated by SSAE 18 SOX a federal law targeting publicly traded corps in the USA
+o SOC 2 type 1 audit reviews managements selection of controls for the organization’s environment
+o Soc 1 audit reviews the accuracy and correctness of the organizations financials 
+o SOC 3 is an attestation (proof) of an audit
+o SOC 4 – not a thing/doesn’t exist
+• The term ISC squared cloud security data life cycle is not actually a cycle
+• Hong Kong is not a part of GDPR
+• Whats the difference between NIST SP 800-37 and NIST SP 800-53?
+• FYI ISO 27001 dictates creation of an organizational information security management system (ISMS)
+• What is an Intractable nuanced variance?
+----
+End of this doc
+-----
+STUFF I NEED TO FIND ANSWERS TO.DOCX
+encryption types
+ 
+cloud data security life cycle
+ 
+cloud data life cycles and phases
+Access and Read are interchangeable words
+https://ccsp.alukos.com/concepts/data/data-lifecycle/
+storage architectures - brush up on
+ 
+wtf is tokenization and whats it for, whats its steps if it uses them, also why would this be used without encryption – 
+tokenization takes data and replaces it with a random value, it then stores the original and the randomized version in a secure database for later recovery, not as secure as encryption (duh). Useful for when the format of the data is important like credit card numbers
+Why would this be used instead of encryption ?? – this is often implemented to satisfy the PCI DSS for firms that process credit card data, probably when encryption is over kill? Retains all essential information
+ 
+wtf is format preserving encryption and what’s it for
+Whole-instance encryption 
+Polymorphic encryption – changes the encryption algorithm every time it’s used while it uses a different method, it creates a consistent key every time. Ideal for 
+https://ccsp.alukos.com/concepts/encryption/encryption-types/
+ 
+which element is protected by an encryption system? - wtf does this even mean?
+ 
+Secure choice authorization (SCA) - what’s this one for?
+ 
+Jurisdiction data protection controls
+ 
+gramm-leach-biley (GLBA), Sarbanes-Oxley act(SOX) what are these ones for - make a flash card for them, which one is the fincial institution one
+ 
+what is directive  95/46/EC
+ 
+data right management
+ 
+data retention methods and metadata
+ 
+what does the Linux dmegs logs do?
+ 
+immutable workloads? wtf is this
+ 
+again, what is SOC 3 document for?
+ 
+elasticity vs scalability whats the difference
+ 
+Clustering how does this help with cloud computing
+ 
+What NIST / ISO does what and how many do i have to remember? like which one covers forensics in cloud security 
+ 
+Whats FERPA for ?
+ 
+bastion host? how is this used in cloud 
+ 
+ISO/IEC 27034? whats it for
+ 
+types of agreements like service level, user license privacy and operation
+ISO 27050-1 what’s it for?
+ 
+IEC 27037 whats it for?
+ 
+what does the cloud security alliance do ?
+ 
+in Europe is there a personal information protection commission if so what is their job
+whats a key risk indicator (KRIs)
+ 
+security controls for all xaaS IAAS, SAAS etc and how the shared responsibility works for those services
+ 
+what is cross site request forgery (CSRF)
+ 
+what is fuzz testing for?
+ 
+static vs dynamic application security testing, their acronyms and white vs black box equivalents and what issues they can detect like malware, performance, threading etc
+ 
+supply chain risks 
+ 
+software development lifecycle and what happens are each stage
+ 
+what is trusted cloud initiative (TCI)
+ 
+OWASP top 9 coding flaws? what are they?
+ 
+does a private cloud stop unauthorized service or eavesdropping?
+what’s a network tier 2 access provider
+ 
+What is platform orchestration?
+ 
+what enforces data retention like hippa data
+ 
+disaster recovery plan metric acronyms like mad, rto , rpo, mts
+ 
+iso standards again like which would be for cloud computing for consumers
+ 
+is there ISO that are just ISOs are can they include /IECs too?, also which would provide procedures for incident investigation principals and processes
+ 
+what is gdprs reach like just HQ or countries that have adopted it . also what’s the data breach response workflow, also what penalties are they 
+ 
+what is amazons IaaS is that elastic beanstalk?
+----
+END OF DOC
+-----
